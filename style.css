@@ -5,10 +5,11 @@
   --muted:#6b6f73;
   --rule:#e4e6e7;
   --accent:#2f6b5e;
+  --question:#d9541e;
   --measure:34rem;
 }
 @media (prefers-color-scheme: dark){
-  :root{--paper:#111213;--ink:#f2f2f0;--muted:#9a9ea2;--rule:#2a2c2e;--accent:#7fb8a8;}
+  :root{--paper:#111213;--ink:#f2f2f0;--muted:#9a9ea2;--rule:#2a2c2e;--accent:#7fb8a8;--question:#f08a4b;}
 }
 *{box-sizing:border-box}
 html{font-size:112.5%}
@@ -34,9 +35,9 @@ figure.portrait img{display:block;width:100%;height:auto;filter:grayscale(1);asp
 figure.portrait figcaption{font-size:.8rem;color:var(--muted);margin-top:.5rem}
 h1{font-weight:700;font-size:clamp(2rem,5.5vw,3.2rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 1.5rem}
 .bio p{max-width:var(--measure);margin:0 0 1rem;font-size:1rem}
-.question{max-width:var(--measure);margin:2rem 0 0 1.5rem;padding-left:1rem;border-left:2px solid var(--accent);color:var(--accent)}
+.question{max-width:var(--measure);margin:2rem 0 0 1.5rem;padding-left:1rem;border-left:2px solid var(--question);color:var(--question)}
 .question h2{font-size:.85rem;font-weight:400;margin:0 0 .4rem;color:var(--muted)}
-.question p{margin:0;font-size:1.15rem;line-height:1.4;color:var(--accent)}
+.question p{margin:0;font-size:1.15rem;line-height:1.4;color:var(--question)}
 @media (max-width:46rem){.question{margin-left:.5rem}}
 .now-teaser{max-width:var(--measure);margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--rule);font-size:.95rem;color:var(--muted)}
 .now-teaser a{color:var(--accent)}
